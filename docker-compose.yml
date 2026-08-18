@@ -53,7 +53,7 @@ services:
 
 networks:
   my-network:
-    driver: navle-bridge
+    driver: navle-bridge.com
 
 volumes:
   mysql_data:
