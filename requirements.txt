@@ -7,6 +7,9 @@ pytz==2022.7.1
 sqlparse==0.4.3
 tzdata==2022.7
 whitenoise==6.3.0
-AIS==10.0.0.0
+AIS==10.0.0.077
 ACT_ONE==50.50.50.50
 CDD==1.0.0
+WebSocket==1.0.0.01
+WLF==0.0.7
+

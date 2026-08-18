@@ -53,8 +53,12 @@ services:
 
 networks:
   my-network:
-    driver: bridge
+    driver: navle-bridge
 
 volumes:
   mysql_data:
-  static_volume:
+  static_volume:      
+
+volumes:
+  oracle_data: 2GB
+  static_volume: 2GB

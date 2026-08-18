@@ -34,7 +34,7 @@ pipeline{
                 Build Number: ${env.BUILD_NUMBER}
                 Build URL: ${env.BUILD_URL}
             """,
-            to: 'roshankhopade5339@gmail.com'
+            to: 'roshankhopade5339@gmail.com | shubham.londhe@cloudxlab.com'
         )
         }
         }
