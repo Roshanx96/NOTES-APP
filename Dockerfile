@@ -28,4 +28,28 @@ RUN python manage.py collectstatic --noinput
 EXPOSE 8000
 
 # Command to run the application
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "notesapp.wsgi:application"] #Main hu beta
+CMD ["gunicorn", "--bind", "0.0.0.0:9000", "notesapp.wsgi:application"]
+
+
+
+#Demo Dockerfile
+# Use a base image
+FROM python:3.12-slim
+
+# Set working directory
+WORKDIR /app
+
+# Copy requirements first
+COPY requirements.txt .
+
+# Install dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy application code
+COPY . .
+
+# Expose application port
+EXPOSE 8080
+
+# Start the application
+CMD ["python", "app.py"]

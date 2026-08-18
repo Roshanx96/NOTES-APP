@@ -24,6 +24,19 @@ pipeline{
                 deploy()
             }
         }
-        
+        stage('Send Email') {
+        steps {
+        emailext(
+            subject: "Jenkins Build ${env.BUILD_NUMBER} - ${currentBuild.currentResult}",
+            body: """
+                Build Status: ${currentBuild.currentResult}
+                Job: ${env.JOB_NAME}
+                Build Number: ${env.BUILD_NUMBER}
+                Build URL: ${env.BUILD_URL}
+            """,
+            to: 'your-email@example.com'
+        )
+        }
+        }
     }
 }
