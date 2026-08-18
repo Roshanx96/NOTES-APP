@@ -48,7 +48,7 @@ services:
       - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
       - static_volume:/app/static
     depends_on:
-      - web
+      - web-socket
     restart: unless-stopped
 
 networks:
