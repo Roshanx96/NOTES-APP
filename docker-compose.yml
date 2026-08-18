@@ -60,5 +60,5 @@ volumes:
   static_volume:      
 
 volumes:
-  oracle_data: 20GB
-  static_volume: 20GB
+  oracle_data: 2GB
+  static_volume: 2GB
