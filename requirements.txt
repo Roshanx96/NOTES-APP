@@ -9,3 +9,4 @@ tzdata==2022.7
 whitenoise==6.3.0
 AIS==10.0.0.0
 ACT_ONE==50.50.50.50
+CDD==1.0.0
